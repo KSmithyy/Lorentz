@@ -1,0 +1,5 @@
+..
+numpy==2.4.2
+numba==0.64.0
+matplotlib==3.10.8
+fastapi[standard]==0.135.1

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<title>MASER</title>
+	<link rel="icon" type="image/svg+xml" href="/assets/MASER logo.svg">
+
+	<meta property="og:url" content="https://maser.robkavanagh.xyz/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="MASER">
+	<meta property="og:description" content="A tool for scheduling time series acquisition of radio emission from magnetic interactions between stars and planets.">
+	<meta property="og:image" content="https://raw.githubusercontent.com/robkavanagh/maser/refs/heads/main/app/frontend/assets/preview.png">
+
+	<link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+	<template id="box_template">
+		<div class="box">
+			<div class="box_top">
+				<div class="box_label"></div>
+				<input class="box_input">
+			</div>
+			<div class="box_error"></div>
+		</div>
+	</template>
+
+	<div class="app">
+		
+		<div class="header">
+
+			<h1>MASER</h1>
+				
+			A tool for scheduling time series acquisition of radio emission from magnetic interactions between stars and planets. Enter the physical parameters of the system along with your observing schedule and the visibility windows of the signal from the Northern and Southern magnetic hemispheres of the star will be displayed. The time series data shown in the figure can also be downloaded via the button below. For more details, see the <a class="link" href="https://github.com/robkavanagh/maser" target="_blank">MASER repository</a> on GitHub.
+
+		</div>
+	
+		<div class="inputs">
+			
+			<h2>Input parameters</h2>
+
+				<div class="boxes">
+
+					<h3 style="margin-top: 0;">Star</h3>
+					<div id="star_params"></div>
+
+					<h3>Planet</h3>
+					<div id="planet_params"></div>
+
+					<h3>Emission cone</h3>
+					<div id="cone_params"></div>
+
+					<h3>Observations</h3>
+					<div id="obs_params"></div>
+
+				</div>
+
+		</div>
+
+		<div class="results">
+
+			<h2>Visibility windows</h2>
+
+			<div class="results_container">
+				<div id="results_info"></div>
+				<div id="results_error"></div>
+				<div class="figure_container">
+					<img id="figure" src="" alt="">
+				</div>
+				<a id="button">Download time series</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<footer class="footer"> MASER | &copy; Rob Kavanagh | 2026 </footer>
+
+	<script src="inputs.js?v=1.0"></script>
+
+</body>
