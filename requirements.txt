@@ -2,4 +2,4 @@ astropy
 matplotlib
 numpy
 scipy
-git+https://github.com/robkavanagh/maser.git
+
